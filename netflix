@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #141414;
+            color: #fff;
+            background-image: url('feature-5.png'); 
+            background-size: cover; 
+            background-position: center;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+        }
+
+        .logo {
+            width: 200px;
+            cursor: pointer;
+        }
+
+        .avatar {
+            width: 35px;
+            cursor: pointer;
+        }
+
+        .main {
+            margin-top: 80px; 
+        }
+
+        .banner {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            color: white;
+            object-fit: contain;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .banner-contents {
+            margin-left: 30px;
+            padding-top: 140px;
+            height: 190px;
+        }
+
+        .banner-title {
+            font-size: 3rem;
+            font-weight: 800;
+            padding-bottom: 0.3rem;
+        }
+
+        .banner-description {
+            width: 45rem;
+            line-height: 1.3;
+            padding-top: 1rem;
+            font-size: 1rem;
+            max-width: 360px;
+            height: 80px;
+        }
+
+        .banner-buttons {
+            display: flex;
+        }
+
+        .banner-button {
+            cursor: pointer;
+            color: #fff;
+            outline: none;
+            border: none;
+            font-weight: 700;
+            border-radius: 0.2vw;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            margin-right: 1rem;
+            background-color: rgba(51, 51, 51, 0.5);
+        }
+
+        .banner-button:hover {
+            color: #000;
+            background-color: #e6e6e6;
+            transition: all 0.2s;
+        }
+
+        .banner-fadeBottom {
+            position: absolute;
+            top: 30vh;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 7.4rem;
+            background-image: linear-gradient(
+                180deg,
+                transparent,
+                rgba(37, 37, 37, 0.61),
+                #141414
+            );
+        }
+
+        .row {
+            margin-left: 20px;
+            color: white;
+        }
+
+        .row-poster {
+            object-fit: contain;
+            margin-right: 10px;
+            transition: transform 450ms;
+            cursor: pointer;
+        }
+
+        .row-posterLarge {
+            width: 200px; 
+            height: 300px; 
+        }
+
+        .row-poster:hover {
+            transform: scale(1.08);
+            opacity: 1;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            color: #999;
+        }
+
+        .footer a {
+            color: #999;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .footer a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="BrandAssets_Logos_01-Wordmark.jpg" alt="Netflix Logo" class="logo">
+        <img src="feature-4.png" alt="Avatar" class="avatar">
+    </header>
+    
+    <div class="main">
+        <div class="banner">
+            <div class="banner-contents">
+                <h1 class="banner-title">Movie Title</h1>
+                <div class="banner-buttons">
+                    <button class="banner-button">Play</button>
+                    <button class="banner-button">My List</button>
+                </div>
+                <h1 class="banner-description">Movie Description</h1>
+            </div>
+            <div class="banner-fadeBottom"></div>
+        </div>
+        
+        <div class="row">
+            <img class="row-poster row-posterLarge" src="feature-1.png" alt="Movie 1">
+            <img class="row-poster row-posterLarge" src="feature-2.png" alt="Movie 2">
+            <img class="row-poster row-posterLarge" src="feature-3.png" alt="Movie 3">
+            <img class="row-poster row-posterLarge" src="feature-4.png" alt="Movie 4">
+            <img class="row-poster row-posterLarge" src="feature-5.png" alt="Movie 5">
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Netflix Movies</p>
+    </div>
+
+    <div class="row">
+        <img class="row-poster row-posterLarge" src="feature-1.png" alt="Movie 1">
+        <img class="row-poster row-posterLarge" src="feature-2.png" alt="Movie 2">
+        <img class="row-poster row-posterLarge" src="feature-3.png" alt="Movie 3">
+        <img class="row-poster row-posterLarge" src="feature-4.png" alt="Movie 4">
+        <img class="row-poster row-posterLarge" src="feature-5.png" alt="Movie 5">
+    </div>
+</body>
+</html>
